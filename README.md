@@ -6,5 +6,5 @@
   * [IAM LAB](https://github.com/jawad1989/aws-solution-architect/tree/master/IAM%26S3)
   * [Create a Blling Alarm](https://github.com/jawad1989/aws-solution-architect/blob/master/IAM%26S3/Create-Billing-Alaram.md)
   * [Create a S3 Bucket](https://github.com/jawad1989/aws-solution-architect/blob/master/IAM&S3/Create-S3-Bucket.md)
-  * S3 Pricing
+  * S3 Pricing Tiers
   
