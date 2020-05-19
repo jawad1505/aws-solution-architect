@@ -9,5 +9,5 @@
   * [S3 Pricing Tiers](https://github.com/jawad1989/aws-solution-architect/blob/master/IAM&S3/S3-Pricing-Tiers.md)
   * [S3 Security & Encryption](https://github.com/jawad1989/aws-solution-architect/blob/master/IAM%26S3/S3-Security.md)
   * [S3 Versioning](https://github.com/jawad1989/aws-solution-architect/blob/master/IAM%26S3/S3-Versioning.md)
-  * [S3 LifeCycle](https://github.com/jawad1989/aws-solution-architect/blob/master/IAM%26S3/S3-Versioning.md)
+  * [S3 LifeCycle](https://github.com/jawad1989/aws-solution-architect/blob/master/IAM%26S3/S3-Lifecycle.md)
   
