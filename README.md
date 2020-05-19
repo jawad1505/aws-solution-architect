@@ -1,6 +1,13 @@
 # [aws-solution-architect](https://aws.amazon.com/certification/certification-prep/)
 
-# IAM
+# IAM & S3
+  * IAM LAB
+  * Create a Blling Alarm
+  * Create a S3 Bucket
+  * S3 Pricing
+  
+
+## IAM LAB
 * Centarlized Control of your AWS account
 * Shared Acccess to your AWS account
 * Granular Permissions
