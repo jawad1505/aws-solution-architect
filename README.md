@@ -20,3 +20,11 @@
   made up of documents called policy documents. JSON format, and they give permissions as to what user/group/role is able to do.
 * Roles
   You create roles and assign them to AWS Resources
+
+### LAB
+* Enable MFA
+* Customize URL
+* Create a new User
+  * Create Group (Policy: Administrator Access)
+* Apply an IAM Password Policy
+* Roles (Give S3 accesss to EC2)
