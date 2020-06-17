@@ -24,6 +24,7 @@
   * Athena VS Macie
     * Interactive query service which enables you to analyse and query data located in S3 using standard SQL
        * you pay per query, serverless
-  * PII( Personally Identifiable Information): personal data used to establish an individual's identity e.g. SSN, back account number
-  * Macie: Security Service that used MachineLearning and Natural Language Processing to discover, classify and protect data stored in S3. Checks your S3 Objects to recongnize that if your S3 contains data such as PII  
+    * PII( Personally Identifiable Information): personal data used to establish an individual's identity e.g. SSN, back account number
+    * Macie: Security Service that used MachineLearning and Natural Language Processing to discover, classify and protect data stored in S3. Checks your S3 Objects to recongnize that if your S3 contains data such as PII  
+  
    
