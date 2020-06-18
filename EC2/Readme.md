@@ -59,3 +59,8 @@
     
   ![move to new region](https://github.com/jawad1989/aws-solution-architect/blob/master/EC2/images/10%20-%20Move%20EBS%20to%20new%20Region.PNG)
     
+  # EBS Vs Instance Store
+   * EBS is by default storage
+   * For instance stores root device launced from AMI is an instance store vol created from template stored in S3
+   * For EBS root device launced from AMI is an EBS vol created from EBS SnapShot
+   * instance store - EC2 cant be stopped as they are not persistent like EBS.
