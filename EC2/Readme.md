@@ -43,10 +43,15 @@
     ![modify EBS](https://github.com/jawad1989/aws-solution-architect/blob/master/EC2/images/5%20-%20EBS.PNG)
   * Now we have to extend the OS file system on the voume to use newly allocated space
   * Gp2 is the root, modify it to Provisioned IOPS and Iops to 100
-    ![modify EBS](https://github.com/jawad1989/aws-solution-architect/blob/master/EC2/images/6%20-%20EBS.PNG)
+  
+    ![modify EBS](https://github.com/jawad1989/aws-solution-architect/blob/master/EC2/images/6%20-EBS.PNG)
+  
   * To move the EBS to new AZ we have to take a snapshot of it from actions. Once done goto snapshots and from actions create image 
-    ![create image](https://github.com/jawad1989/aws-solution-architect/blob/master/EC2/images/7-%20Snapshot.PNG)
-    * Goto AMIs, select the new image and launch, in launch select new subnet (us-east-1a)
-    ![EC2](https://github.com/jawad1989/aws-solution-architect/blob/master/EC2/images/8%20-%20AMI.PNG)
+  
+  ![create image](https://github.com/jawad1989/aws-solution-architect/blob/master/EC2/images/7-%20Snapshot.PNG)
+  
+  * Goto AMIs, select the new image and launch, in launch select new subnet (us-east-1a)
+  
+  ![EC2](https://github.com/jawad1989/aws-solution-architect/blob/master/EC2/images/8%20-%20AMI.PNG)
     ![EC2](https://github.com/jawad1989/aws-solution-architect/blob/master/EC2/images/9%20-%20AMI.PNG)
     
