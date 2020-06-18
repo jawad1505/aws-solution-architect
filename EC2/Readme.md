@@ -63,4 +63,4 @@
    * EBS is by default storage
    * For instance stores root device launced from AMI is an instance store vol created from template stored in S3
    * For EBS root device launced from AMI is an EBS vol created from EBS SnapShot
-   * instance store - EC2 cant be stopped as they are not persistent like EBS.
+   * instance store are ephermal - EC2 cant be stopped as they are not persistent like EBS.
