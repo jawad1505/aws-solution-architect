@@ -35,4 +35,4 @@
     * Provisional IOPS - SSD - Max IOPS 64,000
     * Throughut Optimized Hard Disk Drive  - Max IOPS 500
     * Cold Hard Disk Drive - Max IOPS 250
-    * Magnetic - Max IOPS 40-200
+    * Magnetic - Max IOPS 40-200 
