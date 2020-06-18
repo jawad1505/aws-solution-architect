@@ -53,5 +53,9 @@
   * Goto AMIs, select the new image and launch, in launch select new subnet (us-east-1a)
   
   ![EC2](https://github.com/jawad1989/aws-solution-architect/blob/master/EC2/images/8%20-%20AMI.PNG)
-    ![EC2](https://github.com/jawad1989/aws-solution-architect/blob/master/EC2/images/9%20-%20AMI.PNG)
+  ![EC2](https://github.com/jawad1989/aws-solution-architect/blob/master/EC2/images/9%20-%20AMI.PNG)
+    
+  ### * Move EBS to new Region
+    
+    ![move to new region](https://github.com/jawad1989/aws-solution-architect/blob/master/EC2/images/10%20-%20Move%20EBS%20to%20new%20Region.PNG)
     
