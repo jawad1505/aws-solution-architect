@@ -1,9 +1,9 @@
 # TABLE OF CONTENTS
-# 1. Launch a simple EC2 Instance
-# 2. Security Groups
-# 3. EBS(Elastic Block Store)
-# 4. EBS Vs Instance Store
-# 5. ENI VS ENA VS EFA
+### 1. Launch a simple EC2 Instance
+### 2. Security Groups
+### 3. EBS(Elastic Block Store)
+### 4. EBS Vs Instance Store
+### 5. ENI VS ENA VS EFA
 
 
 # 1. Launch a simple EC2 Instance
