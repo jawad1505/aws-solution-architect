@@ -4,7 +4,7 @@
 ### 3. EBS(Elastic Block Store)
 ### 4. EBS Vs Instance Store
 ### 5. ENI VS ENA VS EFA
-
+### 6. Encrypted Root Device Vol & Snapshots
 
 # 1. Launch a simple EC2 Instance
   * Craete a new instance
@@ -93,3 +93,23 @@
  A network device that you can attach to your EC2 instance to accelerate High Performance Computing(HPC) and maching learning applications.
  * EFA can use OS-Bypass (Linux Only), OS bypass enable HPC and machine learning apps to bypass the OS kernel and communicate directly with EFA device
  * Machin Learning (important)
+
+
+# 6. Encrypted Root Device Vol & Snapshots
+Create an EC2 instance with no encryption on EBS, then create a snap shot, from that snap shot create a encrypted snapshot and use this to launch a new AMI which will be encrypted
+
+* Goto Volumes and See your unencrypted volume
+ 
+ ![EBS UE](https://github.com/jawad1989/aws-solution-architect/blob/master/EC2/images/1-%20UnEncrypted.PNG)
+ 
+* Goto Actions and create an unecryped snapshot
+
+![UE snap](https://github.com/jawad1989/aws-solution-architect/blob/master/EC2/images/2%20-%20Snap.PNG)
+
+* Goto Snapshots and copy and check encryption
+
+![Enc](https://github.com/jawad1989/aws-solution-architect/blob/master/EC2/images/3%20-%20Encrypted.PNG)
+
+* you can see the encryption done
+![done](https://github.com/jawad1989/aws-solution-architect/blob/master/EC2/images/4%20-%20Encrypted%20Done.PNG)
+
