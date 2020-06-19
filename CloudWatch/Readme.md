@@ -40,7 +40,7 @@
    
    ![90Percent](https://github.com/jawad1989/aws-solution-architect/blob/master/CloudWatch/images/12%20-%2090%20percent%20alarm.PNG)
    
-   *create sns topic and add email id
+   * create sns topic and add email id
    
    ![13](https://github.com/jawad1989/aws-solution-architect/blob/master/CloudWatch/images/13%20-Set%20notification.PNG)
    
@@ -48,6 +48,17 @@
    
    ![14](https://github.com/jawad1989/aws-solution-architect/blob/master/CloudWatch/images/14%20-%20name%20and%20desc.PNG)
    
+   * 
+   
    * confirm email
    ![15](https://github.com/jawad1989/aws-solution-architect/blob/master/CloudWatch/images/15%20-%20email%20confirmation.PNG)
    
+   * ssh into your ec2 and rum below command to generate a alarm
+   ```
+   sudo su
+   whilt true; do echo; done
+   ```
+   * now you will see the alarm in cloud watch and also receive an alarm
+   ![alarm](https://github.com/jawad1989/aws-solution-architect/blob/master/CloudWatch/images/16%20-%20alarm%20in%20dashboard.PNG)
+   
+   ![alarm](https://github.com/jawad1989/aws-solution-architect/blob/master/CloudWatch/images/17-%20alarm%20email.PNG)
