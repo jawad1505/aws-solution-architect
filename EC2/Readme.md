@@ -1,3 +1,11 @@
+# TABLE OF CONTENTS
+# 1. Launch a simple EC2 Instance
+# 2. Security Groups
+# 3. EBS(Elastic Block Store)
+# 4. EBS Vs Instance Store
+# 5. ENI VS ENA VS EFA
+
+
 # 1. Launch a simple EC2 Instance
   * Craete a new instance
   ![EC2](https://github.com/jawad1989/aws-solution-architect/blob/master/EC2/images/1-Create%20Ec2.PNG)
@@ -64,3 +72,24 @@
    * For instance stores root device launced from AMI is an instance store vol created from template stored in S3
    * For EBS root device launced from AMI is an EBS vol created from EBS SnapShot
    * instance store are ephermal - EC2 cant be stopped as they are not persistent like EBS.
+
+
+# 5. ENI VS ENA VS EFA
+### ENI
+ Elastic Network interface - Essentially a virtual network card
+ * create a management network
+ * low budget HA solution
+ 
+### EN
+ Enhanced Networking. Uses single root I/O virtualization (SR-IOV) to provide high performance networking capabilities on supported instance types.
+  * provides higher bandwidth, higher packer per second(PPS)
+  * no additional charges, but EC2 has to support it
+  * use where you want good performance
+  * two ways for enabling it
+    * Elastic Network Adapter(ENA), supports network speed upto 100 Gbps
+    * Virtual Function (VF), supports network speed upto 10 Gbps
+    
+### Elastic Fabric Adapter
+ A network device that you can attach to your EC2 instance to accelerate High Performance Computing(HPC) and maching learning applications.
+ * EFA can use OS-Bypass (Linux Only), OS bypass enable HPC and machine learning apps to bypass the OS kernel and communicate directly with EFA device
+ * Machin Learning (important)
