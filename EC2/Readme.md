@@ -113,3 +113,5 @@ Create an EC2 instance with no encryption on EBS, then create a snap shot, from 
 * you can see the encryption done
 ![done](https://github.com/jawad1989/aws-solution-architect/blob/master/EC2/images/4%20-%20Encrypted%20Done.PNG)
 
+* Create an Image from the snapshot
+![encrypted](https://github.com/jawad1989/aws-solution-architect/blob/master/EC2/images/5%20Encrypted%20AMI.PNG)
