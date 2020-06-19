@@ -27,4 +27,21 @@
     * PII( Personally Identifiable Information): personal data used to establish an individual's identity e.g. SSN, back account number
     * Macie: Security Service that used MachineLearning and Natural Language Processing to discover, classify and protect data stored in S3. Checks your S3 Objects to recongnize that if your S3 contains data such as PII  
   
+  * Cloud Watch
+   Performance
+   * Compute (EC2/Autoscaling groups/ELB/Route 53 Health Check)
+   * 5 minutes by default
+   *Storage & Content Delivery(EBS Volumes / Storage Gateways/Cloud Front)
+   * Cloud Watch with EC2:
+    * CPU
+    * Network
+    * Disk
+    * Status Check
+ 
+ * Cloud Trail
+   * monitors API calls in AWS
+   * is like a CCTV, increases visibility into your activity(user/resource) by recording AWS Console and API calls.
+   * You can identify users, accounts, source IP, when were calls made 
+  
+  
    
