@@ -28,3 +28,16 @@
   
 ![53](https://github.com/jawad1989/aws-solution-architect/blob/master/Route53/images/7%20-%20Latency.PNG)
 ![53](https://github.com/jawad1989/aws-solution-architect/blob/master/Route53/images/8%20-%20Latency.PNG)
+
+
+# 4. Failover Routed Policy
+  1. Goto Route 53
+  2. goto hosted zones
+  3. delete the A Record set
+  4. Create two record sets one primary and other secondary, reduce the TTL to one minute
+  5. Assign a health check with each
+  5. you can stop primary EC2 and test secondary will be up
+  
+  ![53](https://github.com/jawad1989/aws-solution-architect/blob/master/Route53/images/9%20-%20Failover.PNG)
+  ![53](https://github.com/jawad1989/aws-solution-architect/blob/master/Route53/images/10%20-failover.PNG)
+  
