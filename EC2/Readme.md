@@ -332,6 +332,15 @@ echo "<html><h1> JAWAD SALEEM test EFS</h1></html>" > index.html
     1. Allow all requests except ones you specify
     2. Block all requests except ones you specify
     3. Count the requests that match the properties you specify
+  
+  * Protection Against
+    1. Ip address where request originates from 
+    2. Country where request originates from
+    3. Values in request header 
+    4. Strings in requests
+    5. Length of requests
+    6. SQL injection - presence of SQL injection in URL
+    7. Presence of CRS(Cross Site Scription) - malacious
     
   * Can Check Layer 7 Data where physical Firewall can only check upto Layer 4 data
   
