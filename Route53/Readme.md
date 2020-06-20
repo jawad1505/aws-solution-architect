@@ -4,14 +4,14 @@
   
 ## Routing Policies:
  1. Simple Routing
-   * One record with multiple IP addresses
-   * user goes to jawadxiv.com route53 wlil route to both IPs randomly
+    * One record with multiple IP addresses
+    * user goes to jawadxiv.com route53 wlil route to both IPs randomly
  2. Weighted Routing
-   * allows to split traffic based on different weights assigned
-   * 10% on US-EAST-1 and 90% on EU-WEST-1
+    * allows to split traffic based on different weights assigned
+    * 10% on US-EAST-1 and 90% on EU-WEST-1
  3. Latency-based Routing
-   * based on the lowest network latency for your end user( which region will give them fastest response time)
-   * you create a latency resource record set in each region for Ec2/ELB that hosts your website, when 53 received request it selects the region/host with lowest latency for that current user
+    * based on the lowest network latency for your end user( which region will give them fastest response time)
+    * you create a latency resource record set in each region for Ec2/ELB that hosts your website, when 53 received request it selects the region/host with lowest latency for that current user
  4. Failover Routing
  5. Geolocation Routing
  6. GeoProximity Routing - Traffic Flow Only
