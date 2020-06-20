@@ -35,6 +35,7 @@ Table of Contents
       * For Read you can point your db
       * upto 5 read replicas of one DB
       * you can have read replicas in a second region
+      * Backups should be ON for activating read replicas
 
 ### * Types of RDS Databases
   1. MYSQL
