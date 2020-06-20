@@ -10,6 +10,7 @@
 ### 9. EC2 instance Meta Data
 ### 10. EFS 101
 ### 11. FSx  & FSx Lustre
+### 12. EC2 Placement Groups
 
 # 1. Launch a simple EC2 Instance
   * Craete a new instance
@@ -296,8 +297,26 @@ echo "<html><h1> JAWAD SALEEM test EFS</h1></html>" > index.html
 
 
 # 11. FSx
- * FSX for Windows
+### * FSX for Windows
    * Its specifically for windows, supports AD user
    * is SMB (Servcer MEssage Block)Based, EFS is not
- * FSx FSx for Lustre
+   
+### * FSx FSx for Lustre
    * FSx Lustre is fully managed FS for compute-intensive workloads such as high perforance, machine learning, media data processing
+
+
+# 12. EC2 Placement Groups
+
+### 1. Clustered PG
+ * within a single AZ
+ * recommended for apps that need low network latency, high network throughput
+
+### 2. Spread PG
+  * each placed on distinct underlaying hardware
+  * apps that have a small number of critical instances that should be kept separate from each other
+  * think individual instances
+  
+### 3. Partitioned PG
+  * similar to Spread PG except you can have multiple EC2 instances within a partition
+  * divides each group into partitions
+  * each rack has its own network and power source
