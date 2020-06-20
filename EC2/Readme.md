@@ -325,7 +325,14 @@ echo "<html><h1> JAWAD SALEEM test EFS</h1></html>" > index.html
 
 # 13. AWS Web Application Firewall - WAF
   * is a web app firewall that lets you ***monitor*** your HTTP and HTTPs traffic that is forwarded to Cloud Front, App Load Balancer or API Gateway.
+  
   * WAF also lets you control access to your content
   
+  * Three behaviours
+    1. Allow all requests except ones you specify
+    2. Block all requests except ones you specify
+    3. Count the requests that match the properties you specify
+    
   * Can Check Layer 7 Data where physical Firewall can only check upto Layer 4 data
+  
   ![OSI Layer](https://github.com/jawad1989/aws-solution-architect/blob/master/EC2/images/7-layers-of-osi-icon.jpg)
