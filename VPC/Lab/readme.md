@@ -43,9 +43,9 @@
     * Create a new SG `jawadxiv-SG` add http allow all traffic `0.0.0.0/0`
     
   2. Private EC2
-    * Select VPC `jawadxiv'
-    * Select Subnet `10.0.2.0 - us-east-1b`
-    * Select Default SG 
+      * Select VPC `jawadxiv'
+      * Select Subnet `10.0.2.0 - us-east-1b`
+      * Select Default SG 
     
   * Goto your VPC `jawadxiv` and enable DNS hostnames
   ![hostname](https://github.com/jawad1989/aws-solution-architect/blob/master/VPC/Lab/images/5%20-%20Enable%20DNS.PNG)
