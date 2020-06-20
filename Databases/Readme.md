@@ -32,8 +32,9 @@ Table of Contents
   * start with 10 GB, scales in 10GB increments to 64 TB
   * Compute resources can scale upto 32 vCPUs and 244 Gb memoery
   * 2 copies of your DB is contained in each AZ, with minimum 3 AZ. Total 6 copies
-  * upto 15 replicas, where MYSQL allow upto 5 replicas
+  * upto 15 replicas, where MYSQL allow upto 5 replicas, Postgress allow upto 1
   * In region replication only, where MYSQL cross Region
+  * Automated failover is only available for only aurora
   
   #### Aurora SERVERLESS
    * is an on demand autoscaling configuration for the Aurora. 
@@ -103,9 +104,13 @@ Table of Contents
     * you are billed for 1 unit per node per hour
       * a 3 node DWS cluster running for a month would cost 2160 hours =(30 days * 24 hours * 3 Nodes)
       * will not be charged for leader node, only compute nodes will be charged
+      
 ## 4. ElastiCache
   * webservice that makes it easy to deploy, operate and scale in memory cache in cloud
-  * used to speed up performance of existing databases( frequent identical queries)
+    e.g. most queried information in cache e.g. top most purchased item today in amazon tech department
+  * used to speed up performance of existing databases( frequent identical queries) and web apps
   * Supports 2 open-source in-memory caching engines:
      1. Redis
+      * advanced datatypes, multi Az, backup/restore
      2. Memcached
+      * simple cache, easy to get started
