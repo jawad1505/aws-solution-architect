@@ -11,3 +11,9 @@
  
 # 3. IGW
   One IGW per VPC
+
+# NAT instances & NAT Gateways
+ NAT instance is a single EC2 instance that we use in our private subnet 
+ NAT Gateway is a highly available Gateway that allows your private subnets to communicate to outer world e.g. downloading files
+ 
+ ~[Disable Source/Destination Checks](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_NAT_Instance.html#EIP_Disable_SrcDestCheck)
