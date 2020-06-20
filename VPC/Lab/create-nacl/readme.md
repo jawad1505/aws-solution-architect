@@ -29,3 +29,6 @@ nano index.html
 
 * also allow outbound rules for 80/443/1024-65535(ephermal ports)
 ![ephermal](https://github.com/jawad1989/aws-solution-architect/blob/master/VPC/Lab/images/14%20-%20NACL%20add%20rules%20outbound.PNG)
+
+
+* Now you will be able to access website in browser
