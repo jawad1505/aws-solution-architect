@@ -3,6 +3,18 @@
   * give your EC2 IP address 
   * give your hostname(domain)
   * give path e.g. /html or /php
+  
+# Bootstrap for Ec2
+change x for your region of each EC2
+```
+#!/bin/bash
+yum update -y
+yum install httpd -y
+chkconfig httpd on
+service httpd start
+cd /var/www/html
+echo "<html><h1>Hello Cloud Gurus! This is the X Web Server</h1></html>" > index.html
+```
 
 # 1. Simple Routing Policy
 
@@ -61,3 +73,9 @@
  # 6. GeoProximity Routed Policy
    * you have to create a traffic flow(orchestration) 
    ![traffic](https://github.com/jawad1989/aws-solution-architect/blob/master/Route53/images/13%20-%20Traffic%20Flows.PNG)
+
+ # 7. MultiValue Answer Policy
+   * you have to create a traffic flow(orchestration) 
+   
+   ![traffic](https://github.com/jawad1989/aws-solution-architect/blob/master/Route53/images/14%20-%20Weighted.PNG)
+   ![traffic](https://github.com/jawad1989/aws-solution-architect/blob/master/Route53/images/15%20-%20Weighted.PNG)
