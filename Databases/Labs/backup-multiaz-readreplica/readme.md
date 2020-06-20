@@ -9,3 +9,12 @@
   
   * Select Apply immediately and press save
   
+### Create Read Replicas and manual backup
+ * Modify RDS and select backups for any period of time i.e. 10
+ * Save and wait for it
+ * Goto actions-> Create Read Replica
+ * Select new region (Optional)
+ * Publicly accessible: No
+ * Encryption: Disable
+ * Give a name
+ * Create Read Replica
