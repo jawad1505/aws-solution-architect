@@ -35,5 +35,11 @@ To disable source/destination checking using the console
 
 ## 4. TEST NAT instance
   * SSH into public EC2
-  * SSH into private EC2
-  * 
+  * SSH into private EC2 `ssh ec2-user@10.0.2.213 -i myPrivateKey.pem` and run below commands
+  ```
+  sudo su
+  
+  yum update -y
+  ```
+  
+  > Before creating this NAT instance you wont be able to get yum updatees
