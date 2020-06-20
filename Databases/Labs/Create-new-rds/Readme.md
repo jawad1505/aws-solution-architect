@@ -4,4 +4,4 @@
 * Create a new VPC
 
 
-![RDS](https://github.com/jawad1989/aws-solution-architect/blob/master/Databases/Labs/images/1%20-%20Create%20DB.PNG)
+![RDS](https://github.com/jawad1989/aws-solution-architect/blob/master/Databases/Labs/images/2%20-%20RDS.png)
