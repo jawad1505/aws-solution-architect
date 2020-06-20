@@ -43,7 +43,7 @@
       * Create a new SG `jawadxiv-SG` add http allow all traffic `0.0.0.0/0`
     
   2. Private EC2
-      * Select VPC `jawadxiv'
+      * Select VPC `jawadxiv`
       * Select Subnet `10.0.2.0 - us-east-1b`
       * Select Default SG 
     
