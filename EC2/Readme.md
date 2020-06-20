@@ -5,6 +5,7 @@
 ### 4. EBS Vs Instance Store
 ### 5. ENI VS ENA VS EFA
 ### 6. Encrypted Root Device Vol & Snapshots
+### 7. Using IAM roles with EC2
 
 # 1. Launch a simple EC2 Instance
   * Craete a new instance
@@ -120,3 +121,33 @@ Create an EC2 instance with no encryption on EBS, then create a snap shot, from 
 ![AMI](https://github.com/jawad1989/aws-solution-architect/blob/master/EC2/images/6%20-%20Live%20AMI.PNG)
 
 ![AMI](https://github.com/jawad1989/aws-solution-architect/blob/master/EC2/images/7%20-%20Create%20EC2%20from%20aMI.PNG)
+
+
+# 7. Using IAM roles with EC2
+ * e,g, you had 1000 Ec2 instance and you were not using role and access key id and secret key was lost,  you have to create new ones and update on each EC2, however if you had roles you can access all of them
+ * in this lab we will create a new role with full Administrative Access(Policy) and name it AdminAccess
+ * SSH into a machine where you have given only programtic access to user
+ ```
+ ssh ec2-usre@<PUBIC_IP> -i private_key.pen
+ 
+ remove the $HOME/.aws folder
+ cd ~
+ rm -rf .aws
+ 
+ run aws s3 ls 
+ 
+ you will get an error sayig no permission, you can re configure by using aws configure
+ ```
+ 
+ * Then we will create a new EC2 instance and goto action and press `Attach/Replace IAM Role`
+ ![iam](https://github.com/jawad1989/aws-solution-architect/blob/master/EC2/images/1%20-%20Atach%20Iam%20role.PNG)
+ 
+ * This will give our EC2 user full access
+ ![roles](https://github.com/jawad1989/aws-solution-architect/blob/master/EC2/images/1-%20IAM%20Role.PNG)
+ 
+ * now SSH into EC2 
+ ```
+ run aws s3 ls
+ ```
+ 
+ * you will be able to access everything
