@@ -58,3 +58,6 @@
   ![53](https://github.com/jawad1989/aws-solution-architect/blob/master/Route53/images/11%20-%20Geo.PNG)
   ![53](https://github.com/jawad1989/aws-solution-architect/blob/master/Route53/images/12%20-%20Geo.PNG)
   
+ # 6. GeoProximity Routed Policy
+   * you have to create a traffic flow(orchestration) 
+   ![traffic](https://github.com/jawad1989/aws-solution-architect/blob/master/Route53/images/13%20-%20Traffic%20Flows.PNG)
