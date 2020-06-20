@@ -59,13 +59,16 @@
  * fundamental type of DNS.
  * A stands for Address
  * used by computer to translate name of domain to IP address
+ * e.g. people name in directory, where cname is jawad also called saleem
 
 ## CNAME:
 * Canonical Name used to resolve domain name to another.
 * e.g. `m.jawadxiv.com` , you also want users to route from `mobile.jawadxiv.com`
+* e.g. people name in directory, where cname is jawad also called saleem
 
 ## Alias Records:
 * are used to map resource records in your hosted zone to ELB, Cloud Front Distribution or S3 Bucket that are configures as ***websites***
+* in exam always choose alias over cname
 
 * CNAME cant be used for naked domain (zone apex record). cant have cname for http://jawadxiv.com it must be either an A record or alias
 
