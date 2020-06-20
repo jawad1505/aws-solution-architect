@@ -47,13 +47,22 @@ Table of Contents
  
 
 ## 2. Non Relational Datbases
-    
+ * Dynamo DB
+   * supports both document and key/value data
+   * SSD Storage
+   * Spread across 3 geographically distinct data centres
+   * Evemtual Consistent Reads(Default)
+      * Best Read Performance - consistency for all copies of data is usually reach within ***one second***
+      * Repeating a read after short time 
+   * Strongly Consistent Read
+      * returns a result the reflects all writes that received a response prior to read (less than one second)
+   
    Collection     = Table
    Document       = Row
    Key Value Pair = Fields
   
   * can have as many cols against a row
-  
+   
 ## 3. Data Warehousing
   * OLTP 
     * Online Transaction Processing: pulls up a row of such as Name, Date, Address etc
