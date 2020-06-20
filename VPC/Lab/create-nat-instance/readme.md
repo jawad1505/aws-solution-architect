@@ -52,6 +52,14 @@ To disable source/destination checking using the console
 * Create a NAT Gateway
   * Add Public Subnet ID
   * Create New Elastic IP
+  
   ![nat](https://github.com/jawad1989/aws-solution-architect/blob/master/VPC/Lab/images/9%20-%20NAT%20Gateway.PNG)
-* In your Private RT - Add a route to your new NATGATEWAT
- ![nat](https://github.com/jawad1989/aws-solution-architect/blob/master/VPC/Lab/images/10%20-%20Edit%20Route%20-%20Private%20RT.PNG)
+
+  * In your Private RT - Add a route to your new NATGATEWAY
+  
+  ![nat](https://github.com/jawad1989/aws-solution-architect/blob/master/VPC/Lab/images/10%20-%20Edit%20Route%20-%20Private%20RT.PNG)
+
+* Test by ssh into EC2-pulic then ssh into private-EC2 run below command to install mysql
+```
+yum install mysql -y
+```
