@@ -1,5 +1,8 @@
 # Build a VPC
-  ### 1. Create your VPC - CIDR 10.0.0.0/16 NAME:jawadxiv
+
+![VPC](https://github.com/jawad1989/aws-solution-architect/blob/master/VPC/Lab/images/6%20-%20VPC.PNG)
+
+### 1. Create your VPC - CIDR 10.0.0.0/16 NAME:jawadxiv
    When you create a VPC, by default below things will be created
     * Route table
     * NACL
