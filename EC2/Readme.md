@@ -11,6 +11,7 @@
 ### 10. EFS 101
 ### 11. FSx  & FSx Lustre
 ### 12. EC2 Placement Groups
+### 13. AWS Web Application Firewall - WAF
 
 # 1. Launch a simple EC2 Instance
   * Craete a new instance
@@ -320,3 +321,11 @@ echo "<html><h1> JAWAD SALEEM test EFS</h1></html>" > index.html
   * similar to Spread PG except you can have multiple EC2 instances within a partition
   * divides each group into partitions
   * each rack has its own network and power source
+
+
+# 13. AWS Web Application Firewall - WAF
+  * is a web app firewall that lets you ***monitor*** your HTTP and HTTPs traffic that is forwarded to Cloud Front, App Load Balancer or API Gateway.
+  * WAF also lets you control access to your content
+  
+  * Can Check Layer 7 Data where physical Firewall can only check upto Layer 4 data
+  ![OSI Layer](https://github.com/jawad1989/aws-solution-architect/blob/master/EC2/images/7-layers-of-osi-icon.jpg)
