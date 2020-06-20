@@ -7,7 +7,7 @@
 ### 6. Encrypted Root Device Vol & Snapshots
 ### 7. Using IAM roles with EC2
 ### 8. Create BootStrap Scripts for EC2
-
+### 9. EC2 instance Meta Data
 
 # 1. Launch a simple EC2 Instance
   * Craete a new instance
@@ -176,3 +176,69 @@ aws s3 cp index.html s3://random123123sdasdasd
 
 * once instance is up and running, you can paste your public ip in browser and verify your page, also goto s3 and see the new bucket with your index.html 
 ![s3](https://github.com/jawad1989/aws-solution-architect/blob/master/EC2/images/4-%20Bucket%20Created.PNG)
+
+
+# 9. EC2 instance Meta Data
+ you can view your instance meta data by ssh into your EC2 instance ad type below commands
+ ```
+ sudo su
+ curl http://169.254.169.254/latest/user-data
+
+```
+
+* get list of what you can see
+
+```
+curl http://169.254.169.254/latest/meta-data
+
+
+ami-id
+ami-launch-index
+ami-manifest-path
+block-device-mapping/
+events/
+hibernation/
+hostname
+iam/
+identity-credentials/
+instance-action
+instance-id
+instance-type
+local-hostname
+local-ipv4
+mac
+metrics/
+network/
+placement/
+profile
+public-hostname
+public-ipv4
+public-keys/
+reservation-id
+security-groups
+```
+
+* then pass at end of URL
+
+```
+curl http://169.254.169.254/latest/meta-data/instance-id
+i-0e45c6aaec247058d
+```
+
+* you can save this to a file on start up if you want to save something in db or s3
+```
+curl http://169.254.169.254/latest/user-data > bootstrap.txt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   270  100   270    0     0  54000      0 --:--:-- --:--:-- --:--:-- 54000
+[root@ip-172-31-63-189 ec2-user]# cat bootstrap.txt
+#!/bin/bash
+yum update -y
+yum install httpd -y
+service httpd start
+chkconfig httpd on
+cd /var/www/html
+echo "<html><h1>Hello Jawad Saleem Welcome To My Webpage</h1></html>"  >  index.html
+aws s3 mb s3://random123123sdasdasd
+aws s3 cp index.html s3://random123123sdasdasd[
+ ```
