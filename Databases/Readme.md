@@ -114,3 +114,23 @@ Table of Contents
       * advanced datatypes, multi Az, backup/restore
      2. Memcached
       * simple cache, easy to get started
+
+
+
+# Questions
+
+* RDS Reserved instances are available for multi-AZ deployments. = True
+
+* With new RDS DB instances, automated backups are enabled by default. = True
+
+* If I wanted to run a database on an EC2 instance, which of the following storage options would Amazon recommend?  = True
+
+* If you want your application to check RDS for an error, have it look for an ___ERROR___ node in the response from the Amazon RDS API.
+
+* Which AWS DB platform is most suitable for OLTP? = RDS
+
+* If you are using Amazon RDS Provisioned IOPS storage with a Microsoft SQL Server database engine, what is the maximum size RDS volume you can have by default? 16 TB
+
+* You are hosting a MySQL database on the root volume of an EC2 instance. The database is using a large number of IOPS, and you need to increase the number of IOPS available to it. What should you do?  add 4 additional EBS SSD vols and create  a raid 10 using these vols
+
+* Technically a destination port number is needed, however with a DB security group the RDS instance port number is automatically applied to the RDS DB Security Group
