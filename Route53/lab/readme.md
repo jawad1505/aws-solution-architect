@@ -20,3 +20,10 @@
   ![53](https://github.com/jawad1989/aws-solution-architect/blob/master/Route53/images/6%20-%20weighted.PNG)
 
 # 3. Latency Routed Policy
+  1. Goto Route 53
+  2. goto hosted zones
+  3. delete the A Record set
+  4. Create two record sets with different regions, reduce the TTL to one minute
+  
+![53](https://github.com/jawad1989/aws-solution-architect/blob/master/Route53/images/7%20-%20Latency.PNG)
+![53](https://github.com/jawad1989/aws-solution-architect/blob/master/Route53/images/8%20-%20Latency.PNG)
