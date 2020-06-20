@@ -42,5 +42,17 @@
 8. The web browser sends a request for www.example.com to the IP address that it got from the DNS resolver. This is where your content is, for example, a web server running on an Amazon EC2 instance or an Amazon S3 bucket that's configured as a website endpoint.
 9. The web server or other resource at 192.0.2.44 returns the web page for www.example.com to the web browser, and the web browser displays the page.
 
+![dns](https://github.com/jawad1989/aws-solution-architect/blob/master/Route53/images/0%20-DNS.PNG)
+
+![dns](https://github.com/jawad1989/aws-solution-architect/blob/master/Route53/images/1-%20DNS.PNG)
+
+![dns](https://github.com/jawad1989/aws-solution-architect/blob/master/Route53/images/1%20-%20b%20DNS.PNG)
+
+![dns](https://github.com/jawad1989/aws-solution-architect/blob/master/Route53/images/2%20-%20DNS.PNG)
+
+![dns](https://github.com/jawad1989/aws-solution-architect/blob/master/Route53/images/3%20-%20DNS.png)
+
+
+
   
   
