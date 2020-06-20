@@ -172,3 +172,7 @@ echo "<html><h1>Hello Jawad Saleem Welcome To My Webpage</h1></html>"  >  index.
 aws s3 mb s3://random123123sdasdasd
 aws s3 cp index.html s3://random123123sdasdasd
 ```
+![bootstrap](https://github.com/jawad1989/aws-solution-architect/blob/master/EC2/images/3-%20Bootstrap.PNG)
+
+* once instance is up and running, you can paste your public ip in browser and verify your page, also goto s3 and see the new bucket with your index.html 
+![s3](https://github.com/jawad1989/aws-solution-architect/blob/master/EC2/images/4-%20Bucket%20Created.PNG)
