@@ -43,3 +43,15 @@ To disable source/destination checking using the console
   ```
   
   > Before creating this NAT instance you wont be able to get yum updatees
+  > problem: single EC2, image if we have 1000's of private EC2 and all wanted to download files, then we will use NAT Gateway
+  
+  * Delete NAT instance and delete the route from route table
+  
+## 5. Create a NAT Gateway - Not free
+* Goto VPC->Nat Gateay
+* Create a NAT Gateway
+  * Add Public Subnet ID
+  * Create New Elastic IP
+  ![nat](https://github.com/jawad1989/aws-solution-architect/blob/master/VPC/Lab/images/9%20-%20NAT%20Gateway.PNG)
+* In your Private RT - Add a route to your new NATGATEWAT
+ ![nat](https://github.com/jawad1989/aws-solution-architect/blob/master/VPC/Lab/images/10%20-%20Edit%20Route%20-%20Private%20RT.PNG)
