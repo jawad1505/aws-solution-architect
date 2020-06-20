@@ -60,3 +60,6 @@
    ![sg](https://github.com/jawad1989/aws-solution-architect/blob/master/VPC/Lab/images/7%20-%20Db%20SG.PNG)
    
    * Now Goto Private EC2 - and assignt his new SG 
+   
+### 7. SSH private from public
+ * SSH into public Ec2 and ping Private EC2 (private IP) to test  if its accessible
