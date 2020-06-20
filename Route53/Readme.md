@@ -22,6 +22,7 @@
     * BIAS: you can optionally choose to route more traffic or less traffic to a given resource by specifying values
     * to use this you must use Route53 TRAFFIC FLOW
  7. Multivalue Answer Routing
+    * Similar as simple routing however it allows you to put health checks on each record set
  
 ## DNS 
   * is used to convert domain names into IP address
