@@ -20,7 +20,8 @@ Table of Contents
   * Are done manually
   * stored even after you delete the original RDS instance
   
-  > Whenever you retore a Restored backup or manual snapshot, the restored version will be a new RDS instance with new DNS end point
+ 
+> Whenever you retore a Restored backup or manual snapshot, the restored version will be a new RDS instance with new DNS end point
   
 ### RDS Two features
   
