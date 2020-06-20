@@ -24,6 +24,24 @@ Table of Contents
   
  
 > Whenever you retore a Restored backup or manual snapshot, the restored version will be a new RDS instance with new DNS end point
+
+### Aurora
+  * is a RDMS that combines speed and availibiiity of high end commercial DBs with cost effectiveness
+  * 5 times better than MYSQL
+  * 3 times better than Postgress
+  * start with 10 GB, scales in 10GB increments to 64 TB
+  * Compute resources can scale upto 32 vCPUs and 244 Gb memoery
+  * 2 copies of your DB is contained in each AZ, with minimum 3 AZ. Total 6 copies
+  * upto 15 replicas, where MYSQL allow upto 5 replicas
+  * In region replication only, where MYSQL cross Region
+  
+  #### Aurora SERVERLESS
+   * is an on demand autoscaling configuration for the Aurora. 
+   * Auroa Serverless DB Cluster automatically starts up, shuts down and scales capacity up or down based on yur app's need
+   * for infrequent, intermittent and un predecitable workloads 
+   
+   
+  
   
 ### RDS Two features
 
