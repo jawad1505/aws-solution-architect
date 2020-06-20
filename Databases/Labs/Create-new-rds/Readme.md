@@ -3,5 +3,7 @@
 * give a database name:jawad
 * Create a new VPC
 
+![db](https://github.com/jawad1989/aws-solution-architect/blob/master/Databases/Labs/images/rsz_2_-_rds.png)
+
 
 ![RDS](https://github.com/jawad1989/aws-solution-architect/blob/master/Databases/Labs/images/2%20-%20RDS.png)
