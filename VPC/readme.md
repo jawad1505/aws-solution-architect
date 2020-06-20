@@ -26,3 +26,14 @@
 * NACL comes before Security group 
 * NACL can block IPs, SG cant
 * NACL are stateless; SG are stateful
+
+# Load Balancer
+You need two subnets with Internet gateway to create a ALB
+
+# VPC flowLogs
+* feature that enables you to capture information about IP traffic going to and from your network interface in your VPC.
+* flow log data is stored using cloud watch
+* can be craeted at 3 levels
+ 1. VPC
+ 2. Subnet
+ 3. Network Interface Level
