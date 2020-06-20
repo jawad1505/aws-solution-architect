@@ -30,8 +30,8 @@ Table of Contents
      * failover is automatic
   
   2. Read Replicas - for performance
-    * Write on one DB1 is copied on DB2
-    * For Read you can point your db 
+      * Write on one DB1 is copied on DB2
+      * For Read you can point your db 
 
 ### * Types of RDS Databases
   1. MYSQL
