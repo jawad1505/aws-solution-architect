@@ -26,11 +26,15 @@ Table of Contents
 ### RDS Two features
   
   1. Multi AZ - for Disaster Recovery
+  
     * Primary and secondary
+  
     * failover is automatic
   
   2. Read Replicas - for performance
+    
     * Write on one DB1 is copied on DB2
+    
     * For Read you can point your db 
 
 ### * Types of RDS Databases
