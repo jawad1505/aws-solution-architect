@@ -38,9 +38,9 @@
   One in public Subnet other in private subnet
   
   1. Public EC2
-    * Select VPC `jawadxiv` 
-    * Select Subnet `10.0.1.0 - us-east-1a`
-    * Create a new SG `jawadxiv-SG` add http allow all traffic `0.0.0.0/0`
+      * Select VPC `jawadxiv` 
+      * Select Subnet `10.0.1.0 - us-east-1a`
+      * Create a new SG `jawadxiv-SG` add http allow all traffic `0.0.0.0/0`
     
   2. Private EC2
       * Select VPC `jawadxiv'
