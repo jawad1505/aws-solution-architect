@@ -20,3 +20,9 @@
 
 
 # Access Control List
+* NACL can have many subnets
+* but one subnet can have one NACL
+* Rule with lower range will have a higher priority e.g. 100 > 200 > 300 so on
+* NACL comes before Security group 
+* NACL can block IPs, SG cant
+* NACL are stateless; SG are stateful
