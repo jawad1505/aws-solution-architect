@@ -2,10 +2,9 @@
   * name derived from: first interstate road, that went from one corner to another
   * dns is on port 53
   
- ## DNS 
+## DNS 
   * is used to convert domain names into IP address
   * like a phone book
-  
 
 ## IP 4:
   * 32 bit field, and has 4 billion different addresses
@@ -29,8 +28,27 @@
 ## NS: Name Server Records
   Used by top level domain server to direct traffic to content DNS which contains the authoratative DNS records
   
- 
- Understanding DNS:
+## TTL:
+ * Time To Live
+   * Lower the TTL, the faster changes to DNS records take to propogate through the internet
+   * Default TTL is 48 hours
+
+## A Record
+ * fundamental type of DNS.
+ * A stands for Address
+ * used by computer to translate name of domain to IP address
+
+## CNAME:
+* Canonical Name used to resolve domain name to another.
+* e.g. `m.jawadxiv.com` , you also want users to route from `mobile.jawadxiv.com`
+
+## Alias Records:
+* are used to map resource records in your hosted zone to ELB, Cloud Front Distribution or S3 Bucket that are configures as ***websites***
+
+* CNAME cant be used for naked domain (zone apex record). cant have cname for http://jawadxiv.com it must be either an A record or alias
+
+
+# Understanding DNS:
  
 1. A user opens a web browser, enters www.example.com in the address bar, and presses Enter.
 2. The request for www.example.com is routed to a DNS resolver, which is typically managed by the user's Internet service provider (ISP), such as a cable Internet provider, a DSL broadband provider, or a corporate network.
