@@ -3,7 +3,7 @@
 * Goto EC2 Services
 * Launch Wizard
 * Select Community AMI
-* Search NAT and select first one
+* Search NAT and select first one ***amzn-ami-vpc-nat-hvm-2018.03.0.20181116-x86_64-ebs - ami-00a9d4a05375b2763***
 * Select your VPC `jawadxiv'
 * select public subnet
 * select public SG
