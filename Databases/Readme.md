@@ -4,7 +4,9 @@ Table of Contents
 # 2. Non RDS
 # 3. Data Warehousing
 # 4. ElastiCache
-
+# 5. Lab
+  ## 5.1. Create a RDS isntance
+  
 ***************************
 
 ## 1.  RDS
