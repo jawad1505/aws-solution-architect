@@ -9,6 +9,7 @@
 ### 8. Create BootStrap Scripts for EC2
 ### 9. EC2 instance Meta Data
 ### 10. EFS 101
+### 11. FSx  & FSx Lustre
 
 # 1. Launch a simple EC2 Instance
   * Craete a new instance
@@ -292,4 +293,11 @@ sudo mount -t efs -o tls fs-11a7d192:/ /var/www/html
 cd /var/www/html
 echo "<html><h1> JAWAD SALEEM test EFS</h1></html>" > index.html
 ```
-* 
+
+
+# 11. FSx
+ * FSX for Windows
+   * Its specifically for windows, supports AD user
+   * is SMB (Servcer MEssage Block)Based, EFS is not
+ * FSx FSx for Lustre
+   * FSx Lustre is fully managed FS for compute-intensive workloads such as high perforance, machine learning, media data processing
