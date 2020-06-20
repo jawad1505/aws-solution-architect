@@ -1,10 +1,10 @@
 
 Table of Contents
-# 1. RDS
-# 2. Non RDS
-# 3. Data Warehousing
-# 4. ElastiCache
-# 5. Lab
+### 1. RDS
+### 2. Non RDS
+### 3. Data Warehousing
+### 4. ElastiCache
+### 5. Lab
   ## 5.1. Create a RDS isntance
   
 ***************************
@@ -12,7 +12,16 @@ Table of Contents
 ## 1.  RDS
 * You cant ssh into RDS
 * RDS is not serverless, aurora serverless is serverless
-
+* Backups:
+  * Auto backups are enabled by default
+  * back data is stored in S3
+  * if RDS is of 20 GB back up will be of 20 GB
+* Snapshots:
+  * Are done manually
+  * stored even after you delete the original RDS instance
+  
+  > Whenever you retore a Restored backup or manual snapshot, the restored version will be a new RDS instance with new DNS end point
+  
 ### RDS Two features
   
   1. Multi AZ - for Disaster Recovery
