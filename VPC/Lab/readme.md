@@ -63,3 +63,9 @@
    
 ### 7. SSH private from public
  * SSH into public Ec2 and ping Private EC2 (private IP) to test  if its accessible
+ * open your download key.pem and copy the private key
+ * ssh into Public EC2 instance
+ * create a new file `myPrivatekey.pem` by using `nano myPrivateKey.pem`
+ * paste the private key here
+ * now ssh into private Ec2 using this key `ssh ec2-user@<PRIVATE_IP_PRIVATE_EC2> -i myPrivateKey.pem`
+ 
