@@ -1,3 +1,9 @@
+
+# Create a health check
+  * give your EC2 IP address 
+  * give your hostname(domain)
+  * give path e.g. /html or /php
+
 # 1. Simple Routing Policy
 
   1. Goto Route 53
@@ -40,4 +46,15 @@
   
   ![53](https://github.com/jawad1989/aws-solution-architect/blob/master/Route53/images/9%20-%20Failover.PNG)
   ![53](https://github.com/jawad1989/aws-solution-architect/blob/master/Route53/images/10%20-failover.PNG)
+
+# 5. Geolocation Routed Policy
+  1. Goto Route 53
+  2. goto hosted zones
+  3. delete the A Record set
+  4. Create two record sets one europe and other north america, reduce the TTL to one minute
+  5. Assign a health check with each
+  5. you can stop primary EC2 and test secondary will be up
+  
+  ![53](https://github.com/jawad1989/aws-solution-architect/blob/master/Route53/images/11%20-%20Geo.PNG)
+  ![53](https://github.com/jawad1989/aws-solution-architect/blob/master/Route53/images/12%20-%20Geo.PNG)
   
