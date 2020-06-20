@@ -69,3 +69,4 @@
  * paste the private key here
  * now ssh into private Ec2 using this key `ssh ec2-user@<PRIVATE_IP_PRIVATE_EC2> -i myPrivateKey.pem`
  
+> in Production you should use a bastion host, not copying the private key in instance
