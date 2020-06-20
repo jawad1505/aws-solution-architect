@@ -13,8 +13,14 @@
     * based on the lowest network latency for your end user( which region will give them fastest response time)
     * you create a latency resource record set in each region for Ec2/ELB that hosts your website, when 53 received request it selects the region/host with lowest latency for that current user
  4. Failover Routing
+    * Active/Passive setup e.g. EU-WEST-2 primary and AP-SOUTHEAST-2 secondary
  5. Geolocation Routing
+    * route traffic as per user region
+    * Can choose country or continent
  6. GeoProximity Routing - Traffic Flow Only
+    * Lets route53 route traffic based on geographic location of users and your resources
+    * BIAS: you can optionally choose to route more traffic or less traffic to a given resource by specifying values
+    * to use this you must use Route53 TRAFFIC FLOW
  7. Multivalue Answer Routing
  
 ## DNS 
