@@ -18,3 +18,5 @@
   ![53](https://github.com/jawad1989/aws-solution-architect/blob/master/Route53/images/4%20-%20weighted.PNG)
   ![53](https://github.com/jawad1989/aws-solution-architect/blob/master/Route53/images/5%20-%20weighted.PNG)
   ![53](https://github.com/jawad1989/aws-solution-architect/blob/master/Route53/images/6%20-%20weighted.PNG)
+
+# 3. Latency Routed Policy
