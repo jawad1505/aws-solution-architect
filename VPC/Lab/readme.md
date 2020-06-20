@@ -53,4 +53,8 @@
   * Goto your VPC `jawadxiv` and enable DNS hostnames
   ![hostname](https://github.com/jawad1989/aws-solution-architect/blob/master/VPC/Lab/images/5%20-%20Enable%20DNS.PNG)
   
-  * SSH into public EC
+### 6. Create a SG for private EC2
+   * Create a New Security Group for private EC2
+   * Name: My_DB_SG
+   * Add rules `HTTP/ICMP/HTTPS/SSH` so Public EC2 can access this
+   ![sg](https://github.com/jawad1989/aws-solution-architect/blob/master/VPC/Lab/images/7%20-%20Db%20SG.PNG)
