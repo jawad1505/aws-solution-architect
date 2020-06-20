@@ -1,4 +1,4 @@
-##  1. Createa a EC2 - NAT instance
+##  1. Create a a EC2 - NAT instance
 
 * Goto EC2 Services
 * Launch Wizard
@@ -25,3 +25,15 @@ To disable source/destination checking using the console
 * For the NAT instance, verify that this attribute is disabled. Otherwise, choose Yes, Disable.
 
 * If the NAT instance has a secondary network interface, choose it from Network interfaces on the Description tab and choose the interface ID to go to the network interfaces page. Choose Actions, Change Source/Dest. Check, disable the setting, and choose Save.
+
+## 3. Add NAT instance into private RT
+
+  * goto vpc, route table
+  * Select private RT
+  * edit route
+  * add new route Destination `0.0.0.0/0` and Target select new NAT EC2 instance
+
+## 4. TEST NAT instance
+  * SSH into public EC2
+  * SSH into private EC2
+  * 
