@@ -6,6 +6,7 @@ Table of Contents
 ### 4. ElastiCache
 ### 5. Lab
   ## 5.1. Create a RDS isntance
+  ## 5.2. RDS Backups, Multi-AZ and Read Replicas
   
 ***************************
 
@@ -29,9 +30,11 @@ Table of Contents
      * Primary and secondary
      * failover is automatic
   
-  2. Read Replicas - for performance
+  2. Read Replicas - for performance 
       * Write on one DB1 is copied on DB2
-      * For Read you can point your db 
+      * For Read you can point your db
+      * upto 5 read replicas of one DB
+      * you can have read replicas in a second region
 
 ### * Types of RDS Databases
   1. MYSQL
