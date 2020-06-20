@@ -181,6 +181,9 @@ aws s3 cp index.html s3://random123123sdasdasd
 * once instance is up and running, you can paste your public ip in browser and verify your page, also goto s3 and see the new bucket with your index.html 
 ![s3](https://github.com/jawad1989/aws-solution-architect/blob/master/EC2/images/4-%20Bucket%20Created.PNG)
 
+https://docs.aws.amazon.com/cli/latest/userguide/aws-cli.pdf
+
+https://docs.aws.amazon.com/cli/latest/reference/
 
 # 9. EC2 instance Meta Data
  you can view your instance meta data by ssh into your EC2 instance ad type below commands
@@ -322,6 +325,9 @@ echo "<html><h1> JAWAD SALEEM test EFS</h1></html>" > index.html
   * divides each group into partitions
   * each rack has its own network and power source
 
+* Spread Placement Groups can be deployed across availability zones since they spread the instances further apart. ***Cluster Placement Groups can only exist in one Availabiity Zone*** since they are focused on keeping instances together, which you cannot do across Availability Zones
+
+* Spread placement groups have a specific limitation that you can only have a ***maximum of 7*** running instances per Availability Zone 
 
 # 13. AWS Web Application Firewall - WAF
   * is a web app firewall that lets you ***monitor*** your HTTP and HTTPs traffic that is forwarded to Cloud Front, App Load Balancer or API Gateway.
@@ -345,3 +351,19 @@ echo "<html><h1> JAWAD SALEEM test EFS</h1></html>" > index.html
   * Can Check Layer 7 Data where physical Firewall can only check upto Layer 4 data
   
   ![OSI Layer](https://github.com/jawad1989/aws-solution-architect/blob/master/EC2/images/7-layers-of-osi-icon.jpg)
+
+
+# Questions
+* EBS, EFS, and FSx are all storage services based on block storage.
+
+* You can add multiple volumes to an EC2 instance and then create your own RAID 5/RAID 10/RAID 0 configurations using those volumes.
+   * RAID is a way of combining individual disks to provide a combination of; faster response time (higher IOPS), greater volume, higher fault tolerance.
+   
+* Individual instances are provisioned in ***AVAILIBILIY ZONES*** not REgions or Globally
+
+* EBS Snapshots are backed up to S3 in what manner? = ***Incrementally***
+
+* You can control whether an EBS root volume is deleted when its associated instance is terminated. The default delete-on-termination behaviour depends on whether the volume is a root volume, or an additional volume. By default, the ***DeleteOnTermination*** attribute for root volumes is set to 'true.' However, this attribute may be changed at launch by using either the ***AWS Console or the command line***. For an instance that is already running, the DeleteOnTermination attribute must be changed using the CLI.
+
+* Can you attach an EBS volume to more than one EC2 instance at the same time? ***YES***
+  * https://aws.amazon.com/blogs/aws/new-multi-attach-for-provisioned-iops-io1-amazon-ebs-volumes/
