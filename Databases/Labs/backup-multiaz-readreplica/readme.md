@@ -10,7 +10,12 @@
   * Select Apply immediately and press save
   
 ### Create Read Replicas and manual backup
+ 
  * Modify RDS and select backups for any period of time i.e. 10
+ 
+ ![backup](https://github.com/jawad1989/aws-solution-architect/blob/master/Databases/Labs/images/8%20-%20Backup.PNG)
+ 
+ 
  * Save and wait for it
  * Goto actions-> Create Read Replica
  * Select new region (Optional)
