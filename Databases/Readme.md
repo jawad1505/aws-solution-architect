@@ -10,6 +10,8 @@ Table of Contents
 ***************************
 
 ## 1.  RDS
+* You cant ssh into RDS
+* RDS is not serverless, aurora serverless is serverless
 
 ### RDS Two features
   
