@@ -32,3 +32,5 @@ nano index.html
 
 
 * Now you will be able to access website in browser
+
+* add (1024 - 65535) in inbound rules as for this new NACL
