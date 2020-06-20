@@ -10,7 +10,7 @@
 * Launch
 
 ## 2. Disable Source/Destination checks
-* Each EC2 instance performs source/destination checks by default. This means that the instance must be the source or destination of any traffic it sends or receives. However, a NAT instance must be able to send and receive traffic when the source or destination is not itself. Therefore, you must disable source/destination checks on the NAT instance.
+Each EC2 instance performs source/destination checks by default. This means that the instance must be the source or destination of any traffic it sends or receives. However, a NAT instance must be able to send and receive traffic when the source or destination is not itself. Therefore, you must disable source/destination checks on the NAT instance.
 
 You can disable the SrcDestCheck attribute for a NAT instance that's either running or stopped using the console or the command line.
 
