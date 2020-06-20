@@ -18,8 +18,12 @@
  
  * Save and wait for it
  * Goto actions-> Create Read Replica
- * Select new region (Optional)
+ * Select new region (Optional) i selected tokyo
+ ![tokyo](https://github.com/jawad1989/aws-solution-architect/blob/master/Databases/Labs/images/9%20-%20Create%20RR.PNG)
+ 
  * Publicly accessible: No
  * Encryption: Disable
- * Give a name
+ * Give a DB Identifier: any name
  * Create Read Replica
+ * you have to change region to view this RDS instance
+ ![tokyo](https://github.com/jawad1989/aws-solution-architect/blob/master/Databases/Labs/images/10-tokyo-region.PNG)
