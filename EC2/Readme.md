@@ -6,11 +6,14 @@
 ### 5. ENI VS ENA VS EFA
 ### 6. Encrypted Root Device Vol & Snapshots
 ### 7. Using IAM roles with EC2
+### 8. Create BootStrap Scripts for EC2
+
 
 # 1. Launch a simple EC2 Instance
   * Craete a new instance
   ![EC2](https://github.com/jawad1989/aws-solution-architect/blob/master/EC2/images/1-Create%20Ec2.PNG)
-  * run below commands to update and install apache httpd
+
+* run below commands to update and install apache httpd
   ```
   yum update -y
   yum install httpd -y
@@ -151,3 +154,21 @@ Create an EC2 instance with no encryption on EBS, then create a snap shot, from 
  ```
  
  * you will be able to access everything
+
+
+# 8. Create BootStrap Scripts for EC2
+* Launch a new EC2
+* Select a role with AdminAccess
+* in bootstrap script paste below code
+this will install `httpd` service, create an index.html file in `html` directory, create a S3 Bucket and copy that index.html into new S3 Bucket
+```
+#!/bin/bash
+yum update -y
+yum install httpd -y
+service httpd start
+chkconfig httpd on
+cd /var/www/html
+echo "<html><h1>Hello Jawad Saleem Welcome To My Webpage</h1></html>"  >  index.html
+aws s3 mb s3://random123123sdasdasd
+aws s3 cp index.html s3://random123123sdasdasd
+```
