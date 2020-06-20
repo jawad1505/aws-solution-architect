@@ -245,6 +245,7 @@ aws s3 cp index.html s3://random123123sdasdasd[
  ```
 
 # 10. EFS 101
+ * is similar to NFS
  * is a file storage service for EC2
  * Storage is elastic, growing and shrinking automatically
  * Goto Services->EFS
@@ -270,3 +271,25 @@ aws s3 cp index.html s3://random123123sdasdasd[
  * Goto your Security Group and change the inbound rule of default( because our EFS is on that SG). Add NFS and select your EC2-SG in source
  ![SG](https://github.com/jawad1989/aws-solution-architect/blob/master/EC2/images/6%20-%20SG.PNG)
  
+
+* SSH into both of your EC2 instances and confim if html is created
+```
+sudo su
+cd /var/www/html
+
+
+```
+
+* Goto your EFS and select `Amazon EC2 mount instructions (from local VPC) this will show the command you need to run, goto ec2 
+```
+cd ..
+
+sudo mount -t efs -o tls fs-11a7d192:/ /var/www/html
+```
+
+* now goto any of your EC2 and create a new file in /var/www/html. You will see file will also be shown in other EC2 intance
+```
+cd /var/www/html
+echo "<html><h1> JAWAD SALEEM test EFS</h1></html>" > index.html
+```
+* 
