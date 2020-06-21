@@ -30,7 +30,11 @@ echo "<html><h1> Hi i am Webserver A</h1></html>" > index.html
   * Add your EC2 instances
   * Review and submit
   
+    ![LB](https://github.com/jawad1989/aws-solution-architect/blob/master/LoadBalancer/Lab/uploads/1%20-%20Load%20Balancer.PNG)
     
+  * In Instance Tab when both of your EC2 instances are in `InService ` state
+  * Copy the DNS name `Classic-LB-Jawad-1261712819.us-east-1.elb.amazonaws.com`  and put in browser
+  * refresh several times you will see the alternate swtiching between your webserver
   
   
   
