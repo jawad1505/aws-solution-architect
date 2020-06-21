@@ -37,7 +37,30 @@ echo "<html><h1> Hi i am Webserver A</h1></html>" > index.html
   * refresh several times you will see the alternate swtiching between your webserver
   
   
-  
+  # 3. Test - Stop one Ec2
+   * Stop Webserver-A EC2 
+   * goto your LoadBalancer dashboard  in instances you will see WebServer-A state would be `OutOfService`
+   * goto browser and enter the DNS host name, you will only see website from WebServer-B
+   
+  # 4. Create Application Load Balancer
+   * First we need to create a target group
+    1. Create a Target Group
+      * Type: instance
+      * VPC: Default
+      * NAME: jawad-TG
+      * Healh check 2,3,2,6
+      * Add both of your Ec2 instances
+      * Review and submit
+    2. Create a ALB
+     * Give Name: Jawad-ALB
+     * Select All Subnets
+     * Select Internet Facing
+     * Select Default SG
+     * Select previously created TG: jawad-TG 
+     * Review and submit
+     * Copy the DNS name from ALB and paste in browser, refresh and you will see webserver swapping
+     
+     ![ALB](https://github.com/jawad1989/aws-solution-architect/blob/master/LoadBalancer/Lab/uploads/1%20-%20Load%20Balancer.PNG)
   
   
   
