@@ -52,3 +52,11 @@ This is because each load balancer node can route its 50% of the client traffic 
 ![wcb](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/images/cross_zone_load_balancing_disabled.png)
 
 # Path Patterns
+
+You can create a listener with rules to forward requests based on the URL path. This is known as path-based routing. If you are running microservices, you can route traffic to multiple back-end services using path-based routing. 
+
+For example, you can route general requests to one target group and requests to render images to another target group.
+
+***Common Scenario***: you want webserver files to be hosted in one subnet (group of ec2 insances) and images to be in other subnet(group of Ec2 Instancer) you give the path in LAB listner rules for images jawadxiv.com/images
+
+[How to Create a Path Pattern](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/tutorial-load-balancer-routing.html)
