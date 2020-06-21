@@ -1,16 +1,16 @@
-# Application Load Balancer 
+# 1. Application Load Balancer 
   * Intelligent
   * Tesla Mode X
   * Best suited for HTTP/HTTPS traffic 
   * Operate at Layer 7 and are application aware
   * create advanced routing, send request to specific web server
   
-# Network Load Balancer
+# 2. Network Load Balancer
   * Best for Extreme performance is required
   * Operate at Layer 4
   * Handling millions of requests per second
 
-# Classic Load Balancer:
+# 3. Classic Load Balancer:
   * Legacy
   * You can LB HTTP/HTTPS apps 
   * You can Use Layer 7 specific features such as X-Forward and sticky Sessions
@@ -19,18 +19,18 @@
   * 504 Gateways Timeout errors
  
  
-# X-Forward For Header
+# 4. X-Forward For Header
   * User browsing to our website on public Address, User IP4 Address `123.12.1.12`
   * request will land at our Load balancer with IP `10.0.0.20`
   * now LB will goto EC2 where EC2 will log user's IP as LB IP `10.0.0.20` (which we dont want, we want exact user's IP)
   * X-Forwarded For will have the public IP address of user which is `123.12.1.12`
 
-# Sticky Session
+# 5. Sticky Session
   * By default, a Classic Load Balancer routes each request independently to the registered instance with the smallest load. However, you can use the sticky session feature (also known as session affinity), which enables the load balancer to bind a user's session to a specific instance. This ensures that all requests from the user during the session are sent to the same instance.
   
   * You can enable sticky sessions to ALB, but traffic will be routed to Target Group rather individual EC2 instance
 
-# Cross Zone Load Balancing
+# 6. Cross Zone Load Balancing
 
 ### With cross load balancing 
 
@@ -51,7 +51,7 @@ If cross-zone load balancing is disabled:
 This is because each load balancer node can route its 50% of the client traffic only to targets in its Availability Zone.
 ![wcb](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/images/cross_zone_load_balancing_disabled.png)
 
-# Path Patterns
+# 7. Path Patterns
 
 You can create a listener with rules to forward requests based on the URL path. This is known as path-based routing. If you are running microservices, you can route traffic to multiple back-end services using path-based routing. 
 
@@ -60,3 +60,22 @@ For example, you can route general requests to one target group and requests to 
 ***Common Scenario***: you want webserver files to be hosted in one subnet (group of ec2 insances) and images to be in other subnet(group of Ec2 Instancer) you give the path in LAB listner rules for images jawadxiv.com/images
 
 [How to Create a Path Pattern](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/tutorial-load-balancer-routing.html)
+
+
+
+# 8. AutoScaling
+
+### Three Components
+1. Groups
+ Logical components can we webservers or databases or apps
+2. Templates
+ Groups uses this template to launch its instances, you can specify ami, instance type, key pair, sG and block device mapping to use
+3. Scaling Options
+ how you want to scale your auto scaling groups, you can scale on time, cpu utilization etc
+ 
+### Scaling Options
+ 1. Manually, most basic way, where you specify max, mix or desired capacity 
+ 2. Maintain current instance level all times by performing periodic health check i.e. if an unhealthy Ec2 fails add one more
+ 3. Scale based on time schedule
+ 4. based on demand ***MOST POPULAR*** using scaling policies e.g. you want 50% CPU utilization for for Auto Scaling Group that runs 2 Ec2 instances.
+ 5. based on predictive scaling, you use ***AWS AUTOSCALING*** help to maintain optimal availibility and performance by combining predictive and dynamic scaling to scale your Ec2 instances
