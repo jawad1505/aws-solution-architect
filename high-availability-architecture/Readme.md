@@ -1,14 +1,14 @@
 # HA Architecture
 
-### Always plan for failure
+### 1. Always plan for failure
 
-### Use Multiple AZ's and Multiple Regions where ever you can
+### 2. Use Multiple AZ's and Multiple Regions where ever you can
 
-### Difference between Multi Az(Disaster Recovery) and Read Replica(Performance)
+### 3. Difference between Multi Az(Disaster Recovery) and Read Replica(Performance)
 
-### Difference between scalling up(load) and scaling down(saving money)
+### 4. Difference between scalling up(load) and scaling down(saving money)
 
-### S3 Storage Classes
+### 5. S3 Storage Classes
 
   #### 1. Standard - General purpose
   
