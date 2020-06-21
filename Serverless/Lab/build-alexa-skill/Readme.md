@@ -9,6 +9,7 @@ Amazon Alexa, also known simply as Alexa, is a virtual assistant AI technology d
 # Lab
   1. Create a S3 Bucket
   2. Give Permission->Bucket Policy, change the ARN
+  
     ```
     {
       "Version": "2012-10-17",
