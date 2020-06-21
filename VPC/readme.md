@@ -70,4 +70,20 @@ A gateway endpoint is a gateway that you specify as a target for a route in your
 
   DynamoDB
 
+# Questions
 
+*  By default, any user-created VPC subnet WILL NOT automatically assign public IPv4 addresses to instances – the only subnet that does this is the “default” VPC subnets automatically created by AWS in your account.
+
+* Each subnet must reside entirely within one Availability Zone and cannot span zones.
+
+* In a custom VPC with new subnets in each AZ, there is a route that supports communication across all subnets/AZs. Plus a default SG with an allow rule 'All traffic, all protocols, all ports, from anything using this default SG'. 
+
+* An application load balancer must be deployed into at least two subnets.
+
+* A Bastion host allows you to securely administer (via SSH or RDP) an EC2 instance located in a private subnet. Don't confuse Bastions and NATs, which allow outside traffic to reach an instance in a private subnet.
+
+* As transitive peering is not allowed, VPC 'B' can communicate directly only with VPC 'A'.
+
+* Security Groups are stateful and Network Access Control Lists are stateless.
+
+* 5 VPC are allowed in a region by default
