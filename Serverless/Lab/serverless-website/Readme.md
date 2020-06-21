@@ -25,3 +25,34 @@ Steps:
     8 . Debuggin and Error Handling
     9. Concurrency
     10. Auditing and Complaince 
+
+# Website Code:
+ [Code](https://github.com/jawad1989/aws-solution-architect/tree/master/Serverless/Lab/uploads/original(1))
+ 
+# steps in Images:
+![aws](https://github.com/jawad1989/aws-solution-architect/blob/master/Serverless/Lab/uploads/1%20-%20Lambda.PNG)
+
+![aws](https://github.com/jawad1989/aws-solution-architect/blob/master/Serverless/Lab/uploads/2%20-%20Click%20here.PNG)
+
+![aws](https://github.com/jawad1989/aws-solution-architect/blob/master/Serverless/Lab/uploads/3%20-%20Delete%20This.PNG)
+
+![aws](https://github.com/jawad1989/aws-solution-architect/blob/master/Serverless/Lab/uploads/4-%20Create%20new%20method.PNG)
+
+![aws](https://github.com/jawad1989/aws-solution-architect/blob/master/Serverless/Lab/uploads/5%20-Deploy%20API.PNG)
+
+![aws](https://github.com/jawad1989/aws-solution-architect/blob/master/Serverless/Lab/uploads/6%20-%20Get%20URL.PNG)
+
+![aws](https://github.com/jawad1989/aws-solution-architect/blob/master/Serverless/Lab/uploads/7%20-%20URL.PNG)
+
+![aws](https://github.com/jawad1989/aws-solution-architect/blob/master/Serverless/Lab/uploads/8%20-%20S3%20Create%20bucket.PNG)
+
+![aws](https://github.com/jawad1989/aws-solution-architect/blob/master/Serverless/Lab/uploads/9%20-%20S3%20Static%20Hosting.PNG)
+
+![aws](https://github.com/jawad1989/aws-solution-architect/blob/master/Serverless/Lab/uploads/10%20-%20make%20objects%20public.PNG)
+
+![aws](https://github.com/jawad1989/aws-solution-architect/blob/master/Serverless/Lab/uploads/11%20-%20Upload%20files.PNG)
+
+![aws](https://github.com/jawad1989/aws-solution-architect/blob/master/Serverless/Lab/uploads/12%20-%20Click%20Me.PNG)
+
+![aws](https://github.com/jawad1989/aws-solution-architect/blob/master/Serverless/Lab/uploads/13%20-%20Route%2053.PNG)
+
