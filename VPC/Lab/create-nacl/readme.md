@@ -34,3 +34,9 @@ nano index.html
 * Now you will be able to access website in browser
 
 * add (1024 - 65535) in inbound rules as for this new NACL
+
+# 3. Deny a Specific IP for Access
+
+* Get your IP4 address from google 
+* In your Public NACL add a new Rule with lower Ruler # i.e. if highest is 100 right now give `99`
+* now access your IP from browser you will not be able to see the web page on Public EC2
