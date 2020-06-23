@@ -80,8 +80,36 @@ Table of Contents
    Collection     = Table
    Document       = Row
    Key Value Pair = Fields
-  
-  * can have as many cols against a row
+   
+   Components:
+    * Tables
+    * Items (like rows) ( stored as JSON) ( made up of Key value pairs)
+    * Attributes ( columns)
+    * key= name of data, Value = the data iteself
+    * Documents can be in JSON,XML,HTML
+    * can have as many cols against a row
+    
+    DAX ( Dynamo DB Accellorator)
+      * fully managed, clustered im memory cahce for dynamo DB
+      * delivers upto 10x read performance
+      * micro second performance
+      * use cases: auction apps, gaming apps, retail sites using black froday
+      * Write Thorough caching:   data is written in cache along with back end store at same time
+      * Suitable for eventual consistent read only, not strong consisten read
+      * not suitable for write intensive apps,
+    Primary Keys:
+      * sores/retrieved data using PK
+      * 2 types:
+        * partition key: 
+          * unique attribute e.g. User ID
+          * value of PK is input to internal hash function which determine the partition/physical location of data
+          * no 2 items can have same partition key
+        * Composite Key: (PK + Sort Key)
+          * e.g. same user posting multiple times to a forum
+          * PK would be a composite key made up of ( Partition key(userID) + SortKey(TimeStamp) 
+          * 2 items may have the same PK
+          * all items with same PK are stored together, then sorted according to sort key value
+          * can store multiple items with same partition key
    
 ## 3. Data Warehousing
   * OLTP 
