@@ -168,11 +168,10 @@ this will install `httpd` service, create an index.html file in `html` directory
 ```
 #!/bin/bash
 yum update -y
-yum install httpd -y
-service httpd start
-chkconfig httpd on
-cd /var/www/html
-echo "<html><h1>Hello Jawad Saleem Welcome To My Webpage</h1></html>"  >  index.html
+yum install -y httpd.x86_64
+systemctl start httpd.service
+systemctl enable httpd.service
+echo "<html><h1>Hello I am $(hostname -f)</h1></html>" > /var/www/html/index.html 
 aws s3 mb s3://random123123sdasdasd
 aws s3 cp index.html s3://random123123sdasdasd
 ```
